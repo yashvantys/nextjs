@@ -25,6 +25,7 @@ export const InfiniteMovingCards = ({
 
     useEffect(() => {
         addAnimation();
+        return () => { }
     }, []);
     const [start, setStart] = useState(false);
     function addAnimation() {
